@@ -40,6 +40,7 @@ class App extends Component {
         const counters = this.state.counters.filter( c => c.id !== counterId );
         this.setState( {counters } );
     }
+    
     render() { 
       return (
         <div className="App">
@@ -47,10 +48,10 @@ class App extends Component {
           <main className='container'> 
             <Counters
               counters = {this.state.counters}
-              onReset={this.handleReset}
-              onDelete={this.handleDelete}
-              onIncrement={this.handleIncrement}
-              onDecrement={this.handleDecrement}
+              // onReset={this.handleReset}
+              // onDelete={this.handleDelete}
+              // onIncrement={this.handleIncrement}
+              // onDecrement={this.handleDecrement}
             />
           </main>
       </div>
