@@ -1,4 +1,6 @@
 
+
+// stateless functional component
 const NavBar = ( { totalCounters } ) => {
     return ( 
         <div className="container">
