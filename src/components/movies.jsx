@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { getMovies } from '../services/fakeMovieService';
 import Like from './Like';
+import Pagination from './pagination';
 
 
 class Movies extends Component {
     state = { 
-        movies : getMovies()
+        movies : getMovies(),
+        pageSize : 4
     }
 
     
@@ -43,6 +45,7 @@ class Movies extends Component {
                         }                    
                 </tbody>
                 </table>
+                <Pagination pageCount={count} pageSize={ this.state.pageSize}  />
             </div>
             </React.Fragment>
         );
